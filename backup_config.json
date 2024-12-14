@@ -1,0 +1,26 @@
+{
+	"taskName": "Periodic PowerShell Backup",
+    "scriptPath": "C:\\robobackup\\backup.ps1",
+    "triggers": [
+        { "dayOfWeek": "Wednesday", "time": "13:00" },
+        { "dayOfWeek": "Saturday", "time": "19:30" }
+    ],
+    "backups": [
+        {
+            "source": "C:\\Users",
+            "destination": "\\\\192.168.1.1\\Backup\\Users",
+            "excludeFiles": ["*.tmp", "*.log", "*.log.*", "NTUSER.DAT", "Cache_*"],
+            "excludeDirs": ["cache", "temp", "node_modules", "tmp", "*Temp*", "*Cache*", "Logs"]
+        },
+		{
+            "source": "C:\\Windows\\Fonts",
+            "destination": "\\\\192.168.1.1\\Backup\\Fonts",
+            "excludeFiles": ["*.tmp"],
+            "excludeDirs": ["cache"]
+        }
+    ],
+	"appListPath": "C:\\robobackup\\InstalledApps.txt",
+    "logPath": "C:\\robobackup\\backup.log",
+    "retryCount": 1,
+    "waitTime": 1
+}
