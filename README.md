@@ -1,4 +1,4 @@
-# RoboBackup: Rsync-like Mirror Backup Solution for Windows
+# RoboBackup: Rsync-like Mirror Backup Solution
 
 ![Header Banner](https://raw.githubusercontent.com/neoground/robobackup/refs/heads/main/banner.webp)
 
@@ -6,7 +6,7 @@
 
 RoboBackup is a PowerShell-based script designed for those who prefer efficient, no-nonsense, 
 and highly customizable backups on Windows. Built by **Neoground**, this tool is for backup experts who want
-a rsync-like experience on Windows 10/11, leveraging the powerhouse `robocopy` utility.
+a rsync-like experience on Windows 10 & 11, leveraging the powerhouse `robocopy` utility.
 
 Why RoboBackup? It’s lean, powerful, and avoids the fluff of GUI-based tools. You get reliable, 
 background backup operations, whether for local drives or network shares.
@@ -22,6 +22,7 @@ This script works reliably on our Windows machines and backs up everything to ou
 - **Highly Customizable**: JSON configuration handles everything from schedules to exclusions.
 - **Network Share Ready**: Perfect for backing up to NAS drives or remote shares.
 - **Performance & Reliability**: Robocopy’s battle-tested efficiency paired with PowerShell's flexibility.
+- **Apps List**: Robocopy saves a list of all installed applications (uses `winget` for this)
 
 ## License
 
