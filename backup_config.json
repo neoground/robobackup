@@ -21,6 +21,7 @@
     ],
 	"appListPath": "C:\\robobackup\\InstalledApps.txt",
     "logPath": "C:\\robobackup\\backup.log",
+    "rclogPath": "C:\\robobackup\\backup_robocopy.log",
     "retryCount": 1,
     "waitTime": 1
 }
