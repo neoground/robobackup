@@ -11,7 +11,10 @@ a rsync-like experience on Windows 10 & 11, leveraging the powerhouse `robocopy`
 Why RoboBackup? It’s lean, powerful, and avoids the fluff of GUI-based tools. You get reliable, 
 background backup operations, whether for local drives or network shares.
 
-This script works reliably on our Windows machines and backs up everything to our network shares.
+This script works reliably on our Windows machines and backs everything up to your network shares or any other drive.
+
+It runs robocopy in backup mode. But locked and forbidden files are skipped, as you can see in the robocopy log file.
+We're working on a fix to try copying them via other mechanisms which can work in such cases.
 
 ---
 
